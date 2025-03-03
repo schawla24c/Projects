@@ -1,0 +1,22 @@
+<!ELEMENT Transcript (StudentInformation, Semester, Courses, GPAInformation)>
+
+<!ELEMENT StudentInformation (StudentID, Name, Major, EnrollmentYear)>
+<!ELEMENT StudentID (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Major (#PCDATA)>
+<!ELEMENT EnrollmentYear (#PCDATA)>
+
+<!ELEMENT Semester (Term, Year)>
+<!ELEMENT Term (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+
+<!ELEMENT Courses (Course+)>
+<!ELEMENT Course (CourseID, CourseName, CreditHours, Grade)>
+<!ELEMENT CourseID (#PCDATA)>
+<!ELEMENT CourseName (#PCDATA)>
+<!ELEMENT CreditHours (#PCDATA)>
+<!ELEMENT Grade (#PCDATA)>
+
+<!ELEMENT GPAInformation (SemesterGPA, CumulativeGPA)>
+<!ELEMENT SemesterGPA (#PCDATA)>
+<!ELEMENT CumulativeGPA (#PCDATA)>

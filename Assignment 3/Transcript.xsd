@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="Transcript">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="StudentInformation" type="StudentInformationType"/>
+                <xs:element name="Semester" type="SemesterType"/>
+                <xs:element name="Courses" type="CoursesType"/>
+                <xs:element name="GPAInformation" type="GPAInformationType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="StudentInformationType">
+        <xs:sequence>
+            <xs:element name="StudentID" type="xs:string"/>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Major" type="xs:string"/>
+            <xs:element name="EnrollmentYear" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SemesterType">
+        <xs:sequence>
+            <xs:element name="Term" type="xs:string"/>
+            <xs:element name="Year" type="xs:gYear"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CoursesType">
+        <xs:sequence>
+            <xs:element name="Course" type="CourseType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CourseType">
+        <xs:sequence>
+            <xs:element name="CourseID" type="xs:string"/>
+            <xs:element name="CourseName" type="xs:string"/>
+            <xs:element name="CreditHours" type="xs:integer"/>
+            <xs:element name="Grade" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GPAInformationType">
+        <xs:sequence>
+            <xs:element name="SemesterGPA" type="xs:decimal"/>
+            <xs:element name="CumulativeGPA" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

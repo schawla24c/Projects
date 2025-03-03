@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Transcript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="Transcript.xsd">
+    <StudentInformation>
+        <StudentID>123456</StudentID>
+        <Name>Sawan Chawla</Name>
+        <Major>Information Technology</Major>
+        <EnrollmentYear>August 2024</EnrollmentYear>
+    </StudentInformation>
+    <Semester>
+        <Term>Fall</Term>
+        <Year>2024</Year>
+    </Semester>
+    <Courses>
+        <Course>
+            <CourseID>IT101</CourseID>
+            <CourseName>Sys/Database Concepts</CourseName>
+            <CreditHours>3</CreditHours>
+            <Grade>A</Grade>
+        </Course>
+        <Course>
+            <CourseID>IT102</CourseID>
+            <CourseName>Web Apps &amp; Elec Com</CourseName>
+            <CreditHours>3</CreditHours>
+            <Grade>A</Grade>
+        </Course>
+        <Course>
+            <CourseID>IT103</CourseID>
+            <CourseName>Leader Tech-Based Org</CourseName>
+            <CreditHours>3</CreditHours>
+            <Grade>A</Grade>
+        </Course>
+    </Courses>
+    <GPAInformation>
+        <SemesterGPA>4.0</SemesterGPA>
+        <CumulativeGPA>4.0</CumulativeGPA>
+    </GPAInformation>
+</Transcript>
